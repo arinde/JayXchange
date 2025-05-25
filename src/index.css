@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+@import "tailwindcss";
+
+
+
+
+/* Define your custom font families using CSS variables */
+:root {
+  /* This will be the primary sans-serif font */
+  --font-family-sans: 'Jost', sans-serif;
+  /* This will be a custom heading font */
+  --font-family-heading: 'Roboto Mono', monospace;
+  --font-family-style: 'bold';
+  --font-family-weight: '500';
+  /* If you want to use the default 'sans' you can also define it like: */
+  /* --font-sans: 'Inter', sans-serif; */
+}
+
+/* You can also set a global font on the body or html element */
+body {
+  font-family: var(--font-family-sans); /* Apply your primary font globally */
+}
+
+/* Your other custom CSS below */
