@@ -47,7 +47,7 @@ const bottomIn = {
 
 export default function Hero(){
     return(
-        <section className=" md:mt-36 relative z-10">
+        <section className=" md:mt-36 mt-28 relative z-10">
             <div className="flex md:flex-row flex-col justify-center  gap-x-2 items-center ">
                 <motion.div 
                 variants={container}
