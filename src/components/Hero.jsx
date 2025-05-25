@@ -47,7 +47,7 @@ const bottomIn = {
 
 export default function Hero(){
     return(
-        <section className="md:-mt-[700px] -mt-[690px]">
+        <section className=" md:mt-36 relative z-10">
             <div className="flex md:flex-row flex-col justify-center  gap-x-2 items-center ">
                 <motion.div 
                 variants={container}
@@ -57,26 +57,26 @@ export default function Hero(){
                 transition={{ delay: 0.9 }}
                 className="flex flex-col items-start justify-center ml-9">
 
-                    <motion.span variants={lineAnim} className="flex font-sans font-bold justify-start items-center sm:text-5xl text-4xl">EXCHANGE 
+                    <motion.span variants={lineAnim} className="flex font-sans font-bold justify-start items-center sm:text-5xl text-3xl">EXCHANGE 
                       <motion.img initial={{ rotate: 0 }}
                         animate={{ rotate: 360 }}
-                        transition={{ repeat: Infinity, duration: 4, ease: "linear", opacity: 100 }} src={Icon2} alt="" className="w-14 md:w-auto" />
+                        transition={{ repeat: Infinity, duration: 4, ease: "linear", opacity: 100 }} src={Icon2} alt="" className="w-10 md:w-auto" />
                     </motion.span>
 
-                    <motion.span variants={lineAnim} className="flex font-sans font-bold justify-start items-center sm:text-5xl text-4xl md:-mt-2 -mt-3">GIFTCARDS FOR 
+                    <motion.span variants={lineAnim} className="flex font-sans font-bold justify-start items-center sm:text-5xl text-3xl md:-mt-2 -mt-1">GIFTCARDS FOR 
                       <motion.img initial={{ rotate: 0 }}
                         animate={{ rotate: 360 }}
-                        transition={{ repeat: Infinity, duration: 4, ease: "linear", opacity: 100 }} src={Icon1} alt="" className="w-14 md:w-auto"/>
+                        transition={{ repeat: Infinity, duration: 4, ease: "linear", opacity: 100 }} src={Icon1} alt="" className="w-10 md:w-auto"/>
                     </motion.span>
 
-                    <motion.span variants={lineAnim} className="flex font-sans font-bold justify-start items-center sm:text-5xl text-4xl md:-mt-2 -mt-3">CRYPTO AND NAIRA 
+                    <motion.span variants={lineAnim} className="flex font-sans font-bold justify-start items-center sm:text-5xl text-3xl md:-mt-2 -mt-1">CRYPTO AND NAIRA 
                       <motion.img initial={{ rotate: 0 }}
                         animate={{ rotate: 360 }}
-                        transition={{ repeat: Infinity, duration: 4, ease: "linear", opacity: 100 }} src={Icon3} alt="" className="w-14 md:w-auto"/>
+                        transition={{ repeat: Infinity, duration: 4, ease: "linear", opacity: 100 }} src={Icon3} alt="" className="w-10 md:w-auto"/>
                     </motion.span>
 
-                    <motion.span variants={lineAnim} className="flex font-sans font-bold justify-start items-center sm:text-5xl text-4xl md:-mt-2 -mt-3">INSTANTLY</motion.span>
-                    <motion.p variants={lineAnim} className="text-wrap text-gray-600 text-[16px]  font-sans my-4">Your unused gift cards? They're instant crypto. Exchange safely, swiftly, and effortlessly</motion.p>
+                    <motion.span variants={lineAnim} className="flex font-sans font-bold justify-start items-center sm:text-5xl text-3xl md:-mt-2 -mt-1">INSTANTLY</motion.span>
+                    <motion.p variants={lineAnim} className="text-wrap text-gray-600 text-[16px]  font-sans my-2">Your unused gift cards? They're instant crypto. Exchange safely, swiftly, and effortlessly</motion.p>
                     <motion.div 
                     whileHover={{ scale: 1.05}} 
                     transition={{ type: "spring", stiffness: 300, damping: 20 }}
@@ -89,12 +89,12 @@ export default function Hero(){
                         size="medium" 
                         className='mt-3 mx-5 w-fit flex items-center gap-x-1 shadow-xl'>Get Started <MoveUpRight className="w-4" /></Button>
                     </motion.div>
-                    <div className="flex flex-col items-start mt-28">
-                        <motion.p variants={lineAnim} className="text-2xl font-serif text-gray-700">Trusted By</motion.p>
+                    <div className="flex flex-col items-start md:mt-28 mt-8">
+                        <motion.p variants={lineAnim} className="md:text-2xl text-lg font-serif text-gray-700">Trusted By</motion.p>
                         <div className=" flex justify-start gap-2">
-                            <motion.img variants={lineAnim} src={Company1} alt="" className="w-24 sm:w-auto" />
-                            <motion.img variants={lineAnim} src={Company2} alt="" className="w-24 sm:w-auto" />
-                            <motion.img variants={lineAnim} src={Company3} alt="" className="w-24 sm:w-auto" />
+                            <motion.img variants={lineAnim} src={Company1} alt="" className="w-16 sm:w-auto" />
+                            <motion.img variants={lineAnim} src={Company2} alt="" className="w-16 sm:w-auto" />
+                            <motion.img variants={lineAnim} src={Company3} alt="" className="w-16 sm:w-auto" />
                         </div>
                     </div>
                 </motion.div>
@@ -104,7 +104,7 @@ export default function Hero(){
                 whileInView="show"
                 viewport={{ once: true, amount: 0.5 }}
                 >
-                    <motion.img animate={{ y: [0, -10, 0] }} transition={{ duration: 2, repeat: Infinity }} src={HeroImg} alt="" className="md:w-76 w-80 mt-24 " />
+                    <motion.img animate={{ y: [0, -10, 0] }} transition={{ duration: 2, repeat: Infinity }} src={HeroImg} alt="" className="md:w-76 w-84 md:mt-24 mt-12 " />
                 </motion.div>
             </div>
         </section>

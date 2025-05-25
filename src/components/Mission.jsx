@@ -51,7 +51,7 @@ export default function Mission(){
                 className="flex md:flex-row flex-col-reverse md:justify-evenly justify-center items-center">
                     <motion.img variants={fadeFromLeft} src={MissionCloud} alt="" className="md:-mr-20 -mt-56 hidden md:block" />
                     
-                    <div className="flex flex-col justify-start md:w-116 w-100 mt-4">
+                    <div className="flex flex-col justify-center md:w-116 w-fit mx-5 items-start mt-4">
                         <motion.p variants={fadeFromUp} className="md:text-4xl text-3xl font-serif font-semibold">Mission Statement</motion.p>
                         <motion.p variants={fadeFromDown} className="text-wrap font-medium font-serif md:text-[18px] text-[16px] text-gray-600 mt-2">Our mission is to empower individuals worldwide by offering a seamless, 
                             secure, and instant platform dedicated to converting unused gift card value
@@ -70,7 +70,7 @@ export default function Mission(){
                     animate={{ y: [0, -10, 0] }}
                     transition={{ duration: 2, repeat: Infinity }}
                     variants={fadeFromLeft} src={VisionImg} alt="" className="md:w-104 w-80" />
-                    <div className="flex flex-col justify-start md:w-116 w-100 mt-4">
+                    <div className="flex flex-col justify-center items-start md:w-116 w-fit mx-5 mt-4">
                         <motion.p variants={fadeFromUp} className="md:text-4xl text-3xl font-serif font-semibold">Vision Statement</motion.p>
                         <motion.p variants={fadeFromDown} className="text-wrap font-medium font-serif md:text-[18px] text-[16px] text-gray-600 mt-2">Our vision is to become the foremost global bridge, seamlessly connecting traditional 
                             forms of value with the dynamic digital economy. We envision a future where converting 

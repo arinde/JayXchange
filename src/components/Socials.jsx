@@ -20,7 +20,7 @@ export default function Socials(){
                 <motion.img animate={{ y: [0, -10, 0] }} transition={{ duration: 2, repeat: Infinity }} src={Naira} className="absolute bottom-0 md:right-4 -right-3 md:w-68 w-36 z-20" />
 
                 {/* Social Icons */}
-                <div className="flex md:flex-row flex-col justify-center md:gap-16 gap-3 py-10 z-10 relative mt-16">
+                <div className="flex md:flex-row flex-col justify-center md:gap-16 gap-3 py-10 z-10 relative md:mt-16 mt-2">
                     <motion.div 
                     whileHover={{ scale: 1.05}} 
                     transition={{ type: "spring", stiffness: 300, damping: 20 }}

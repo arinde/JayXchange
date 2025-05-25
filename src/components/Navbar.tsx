@@ -7,7 +7,7 @@ import { HashLink as Link } from "react-router-hash-link";
 
 function scrollWithOffset(el: HTMLElement) {
   const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-  const yOffset = -120; // adjust this to your navbar height or desired offset
+  const yOffset = -120; 
   window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
 }
 
@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
     animate={{ y: 0, opacity: 1 }}
     transition={{ duration: 0.5,  ease: [0.42, 0, 0.58, 1] }}
     className="bg-white text-black shadow-lg opacity-95 fixed z-50 w-full">
-      <div className="max-w-7xl md:mx-auto md:px-4 px-3 sm:px-6 lg:px-8 flex md:justify-evenly justify-between items-center h-24">
+      <div className="max-w-7xl md:mx-auto md:px-4 px-3 sm:px-6 lg:px-8 flex md:justify-evenly justify-between items-center md:h-24 h-20">
         {/* Logo */}
         <img src={JayLogo} className='w-40' />
 
@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className='pb-4 '>
-          <div className="md:hidden mx-5 px-4 pb-4 space-y-2 flex flex-col items-start justify-center gap-y-5 border-0 rounded-3xl bg-gray-50 w-112 shadow-lg">
+          <div className="md:hidden  px-4 pb-4 space-y-2 flex flex-col items-start justify-center gap-y-5 border-0 rounded-3xl bg-gray-50 w-full shadow-lg">
             <Link smooth to="#Solution" scroll={el => scrollWithOffset(el)} onClick={toggleMenu} className="block hover:text-blue-600 mt-5 ml-4 font-serif font-medium text-lg">Our Services</Link>
             <Link smooth to="#FAQ" scroll={el => scrollWithOffset(el)} onClick={toggleMenu} className="block hover:text-blue-600 font-serif ml-4 font-medium text-lg">FAQs</Link>
             <Link smooth to="#Testimonial" scroll={el => scrollWithOffset(el)} onClick={toggleMenu} className="block hover:text-blue-600 font-serif ml-4 font-medium text-lg">Testimonial</Link>

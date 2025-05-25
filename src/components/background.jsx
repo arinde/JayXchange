@@ -27,20 +27,20 @@ export default function Background ({ onLoadComplete }) {
             show: { opacity: 1, x: 0, transition: { duration: 1, ease: "easeOut" } },
         };
     return(
-        <div className="md:flex justify-center">
+        <div className="top-0 left-0  w-full z-0 absolute">
             <motion.img 
             variants={fadeInFromLeft}
             initial="hidden"
             animate="show"
             onLoad={handleImageLoad}
-            src={Herotop} alt="" className="md:-mt-84" />
+            src={Herotop} alt="" className=" w-full h-full object-cover" />
 
             <motion.img 
             variants={fadeInFromLeft}
             initial="hidden"
             animate="show"
             onLoad={handleImageLoad}
-            src={Heroright} alt="" className="md:-ml-100" />
+            src={Heroright} alt="" className=" absolute top-0 left-0 w-full h-full object-contain" />
         </div>
     )
 }

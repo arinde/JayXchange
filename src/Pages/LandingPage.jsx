@@ -87,8 +87,11 @@ export default function LandingPage() {
     return(
         <>
         <Navbar /> 
-        <Background onLoadComplete={() => setBgLoaded(true)} />
-        {bgLoaded && <div><Hero /></div>}
+        <div className="relative w-full overflow-hidden">
+          <Background onLoadComplete={() => setBgLoaded(true)} />
+          {bgLoaded && <div><Hero /></div>}
+        </div>
+        
         
         <Solutions />
         <WhyUs />
