@@ -98,7 +98,7 @@ export default function LandingPage() {
         <section id="Testimonial" className="bg-gray-100 py-6 mt-10 overflow-hidden">
             <div className="max-w-7xl mx-auto px-4">
                 <p className="text-center text-blue-600 text-[21px]">Testimonials</p>
-                <p className="text-center text-gray-700 font-serif text-3xl md:text-4xl font-medium">What Our Customers Says</p>
+                <p className="text-center font-serif text-3xl md:text-4xl font-medium">What Our Customers Says</p>
                 <div 
                 ref={scrollRef}
                 className="flex md:flex-row flex-col md:justify-around justify-center gap-4 py-8 px-5 cursor-grab md:overflow-x-hidden md:verflow-y-hidden md:whitespace-nowrap scrollbar-hide">

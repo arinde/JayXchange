@@ -52,7 +52,7 @@ export default function Socials(){
                     <span className="md:text-[220px] font-serif md:-mr-8">J</span>AYXCHANGE
                 </div>
 
-                <p className="m-3 text-gray-400 md:mt-68 mt-40 text-center md:text-[13px] text-[11px] tracking-wide font-bold">&copy; {new Date().getFullYear()} Arinde Victor. Inspiration for this work was gotten from brindeng.com</p>
+                <p className="m-3 text-gray-400 md:mt-68 mt-44 text-center md:text-[13px] text-[11px] tracking-wide font-bold">&copy; {new Date().getFullYear()} Arinde Victor. Inspiration for this work was gotten from brindeng.com</p>
             </div>
 
         

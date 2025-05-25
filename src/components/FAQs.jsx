@@ -10,7 +10,7 @@ export default function FAQs(props) {
             <div 
             className="flex justify-between items-center border-0 shadow-md rounded-xl bg-gray-50
              hover:bg-gray-100 px-4 py-5  md:w-164 w-full  " onClick={() => setOpen(!open)}>
-                <p className="font-serif text-gray-800 md:text-[15px] text-[13px] tracking-wide font-semibold">{props.question}</p>
+                <p className="font-sans text-gray-800 md:text-[15px] text-[13px] tracking-wide font-semibold">{props.question}</p>
                 <button
                     onClick={() => setOpen(!open)} className="text-left font-medium text-blue-600 text-2xl">
                     {open ? <Minus size={20} /> : <Plus size={20} />}

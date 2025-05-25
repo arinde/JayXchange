@@ -1,6 +1,6 @@
 export default function Testimonial (props) {
     return(
-        <div className="min-w-[300px] md:min-w-[320px] border-0 rounded-lg group bg-white md:shadow-2xl flex flex-col justify-start items-start px-4 py-4">
+        <div className="min-w-[300px] md:min-w-[320px] border-0 rounded-lg group bg-white md:shadow-lg flex flex-col justify-start items-start px-4 py-4">
             <div className="rounded-bl-full bg-gray-200 group-hover:bg-blue-600 w-10 h-10">
                 <p className="text-center text-3xl mt-2 group-hover:text-white transition duration-1000 text-gray-600">"</p>
             </div>

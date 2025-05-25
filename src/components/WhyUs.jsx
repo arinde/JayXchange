@@ -26,7 +26,7 @@ export default function WhyUs() {
     return(
         <section className="bg-gray-50 mt-6 py-6">
             <div className="flex flex-col justify-center items-center gap-6 md:mt-24 mt-10">
-                <p className="text-gray-700 font-serif text-4xl font-medium">WHY US ?</p>
+                <p className="text-gray-900 font-serif text-4xl font-medium">WHY US ?</p>
                 <motion.div 
                 variants={container}
                 initial="hidden"
